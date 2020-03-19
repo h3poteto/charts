@@ -7,6 +7,13 @@ Expand the name of the chart.
 {{- end -}}
 
 {{/*
+Expand the namespace of the chart.
+*/}}
+{{- define "kms-secrets.namespace" -}}
+{{- default "default" .Release.Namespace -}}
+{{- end -}}
+
+{{/*
 Create the name of the service account to use
 */}}
 {{- define "kms-secrets.serviceAccountName" -}}

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "kms-secrets.name" . }}-manager
-  namespace: {{ .Values.namespace }}
+  namespace: {{ include "kms-secrets.namespace" . }}
   labels:
     control-plane: controller-manager
 spec:
