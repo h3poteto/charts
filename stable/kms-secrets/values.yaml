@@ -6,6 +6,8 @@ image:
 
 rbac:
   create: true
+  serviceAccountName: ""
   serviceAccount:
-    name: manager
     annotations: {}
+
+podAnnotations: {}
