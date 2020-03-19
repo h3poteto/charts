@@ -17,6 +17,9 @@ Expand the namespace of the chart.
 Create the name of the service account to use
 */}}
 {{- define "kms-secrets.serviceAccountName" -}}
-{{- $name := default "default" .Values.rbac.serviceAccount.name }}
-{{- printf "%s-%s" (include "kms-secrets.name" .) $name }}
+{{- if .Values.rbac.create }}
+    {{- printf "%s-%s" (include "kms-secrets.name" .) "manager" }}
+{{- else -}}
+    {{ default "default" .Values.rbac.serviceAccountName }}
+{{- end -}}
 {{- end -}}

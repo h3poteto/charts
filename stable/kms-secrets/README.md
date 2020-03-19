@@ -21,8 +21,9 @@ $ helm delete --purge kms-secrets
 Parameter | Description | Default
 |------|------|------|
 | `namespace` | Namespace which you want to install | `kube-system` |
-| `manager.image.repository` | The image repository to pull from | `h3poteto/kms-secrets` |
-| `manager.image.tag` | The image tag to pull | `v0.1.0` |
+| `image.repository` | The image repository to pull from | `h3poteto/kms-secrets` |
+| `image.tag` | The image tag to pull | `v0.1.0` |
 | `rbac.create` | If true, create RBAC resources | `true` |
-| `rbac.serviceAccount.name` | Service Account name | `manager` |
-| `rbac.serviceAccount.annotations` | Annotations to add the Service Account | `{}` |
+| `rbac.serviceAccountName` | existing ServiceAccount to use (ignored if rbac.create=true) | `default` |
+| `rbac.serviceAccount.annotations` | Annotations to add to the Service Account (ignore if rbac.create=false) | `{}` |
+| `podAnnotations` | Annotations to add to the Controller Pods| `{}` |
