@@ -25,7 +25,7 @@ spec:
         - /manager
         args:
         - --enable-leader-election
-        image: "{{ .Values.manager.image.repository }}:{{ .Values.manager.image.tag }}"
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         name: manager
         resources:
           limits:
