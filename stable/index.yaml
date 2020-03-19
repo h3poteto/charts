@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  kms-secrets:
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2020-03-19T15:27:17.807131104+09:00"
+    description: KMS Secrets Helm chart for Kubernetes
+    digest: 34f19d2704f4fd65cf9f320f70debcf833010be5595da15a8ef47aa4a1798d10
+    home: https://github.com/h3poteto/kms-secrets
+    name: kms-secrets
+    sources:
+    - https://github.com/h3poteto/kms-secrets
+    urls:
+    - kms-secrets-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-03-19T15:27:17.80675841+09:00"
