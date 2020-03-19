@@ -9,4 +9,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: {{ include "kms-secrets.serviceAccountName" . }}
-  namespace: {{ .Values.namespace }}
+  namespace: {{ include "kms-secrets.namespace" . }}
