@@ -22,7 +22,7 @@ Parameter | Description | Default
 |------|------|------|
 | `namespace` | Namespace which you want to install | `kube-system` |
 | `image.repository` | The image repository to pull from | `h3poteto/kms-secrets` |
-| `image.tag` | The image tag to pull | `v0.1.0` |
+| `image.tag` | The image tag to pull | `v0.1.1` |
 | `rbac.create` | If true, create RBAC resources | `true` |
 | `rbac.serviceAccountName` | existing ServiceAccount to use (ignored if rbac.create=true) | `default` |
 | `rbac.serviceAccount.annotations` | Annotations to add to the Service Account (ignore if rbac.create=false) | `{}` |
