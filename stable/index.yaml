@@ -3,7 +3,7 @@ entries:
   kms-secrets:
   - apiVersion: v1
     appVersion: 0.1.1
-    created: "2020-03-28T21:54:32.568540673+09:00"
+    created: "2020-05-14T18:03:22.149456531+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 5aa37c01d66da07666af9505cdf95531a93d90bf0693d23dbd2592b364782a7f
     home: https://github.com/h3poteto/kms-secrets
@@ -15,7 +15,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2020-03-28T21:54:32.568049926+09:00"
+    created: "2020-05-14T18:03:22.148880072+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 765ea0030d5d352d2a574c1d90053b6512b327bebcd97092fc7105ef0c163dfc
     home: https://github.com/h3poteto/kms-secrets
@@ -27,7 +27,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2020-03-28T21:54:32.567512309+09:00"
+    created: "2020-05-14T18:03:22.148286761+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 34f19d2704f4fd65cf9f320f70debcf833010be5595da15a8ef47aa4a1798d10
     home: https://github.com/h3poteto/kms-secrets
@@ -37,4 +37,15 @@ entries:
     urls:
     - kms-secrets-0.1.0.tgz
     version: 0.1.0
-generated: "2020-03-28T21:54:32.566818707+09:00"
+  yadockeri:
+  - apiVersion: v2
+    appVersion: 0.4.0
+    created: "2020-05-14T18:03:22.149962056+09:00"
+    description: Yadockeri Helm chart for Kubernetes
+    digest: 863fc166221ad4bcac63ca6d113099040141f642c3624f76131e82256130f5b9
+    name: yadockeri
+    type: application
+    urls:
+    - yadockeri-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-05-14T18:03:22.147842963+09:00"
