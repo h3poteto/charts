@@ -1,0 +1,49 @@
+{{- if .Values.db.create -}}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "yadockeri.name" . }}-db
+  namespace: {{ include "yadockeri.namespace" . }}
+  labels:
+    {{- include "yadockeri.labels" . | nindent 4 }}
+    {{- include "yadockeri.dbLabels" . | nindent 4 }}
+spec:
+  replicas: 1
+  serviceName: {{ include "yadockeri.name" . }}
+  selector:
+    matchLabels:
+      {{- include "yadockeri.dbLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "yadockeri.dbLabels" . | nindent 8 }}
+    spec:
+      serviceAccountName: {{ include "yadockeri.serviceAccountName" . }}
+      containers:
+        - name: db
+          image: "{{ .Values.db.image.repository }}:{{ .Values.db.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+            - configMapRef:
+                name: {{ include "db.config.name" . }}
+            - secretRef:
+                name: {{ include "db.config.name" . }}
+          ports:
+            - name: postgres
+              containerPort: 5432
+              protocol: TCP
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+{{- end }}
