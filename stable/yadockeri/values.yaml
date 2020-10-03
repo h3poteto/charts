@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: h3poteto/yadockeri
+  repository: ghcr.io/h3poteto/yadockeri
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart version.
-  tag: v0.4.0
+  tag: 0.4.1
 
 rbac:
   create: true
