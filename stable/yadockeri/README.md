@@ -25,8 +25,8 @@ $ helm delete yadockeri
 Parameter | Description | Default
 |------|------|------|
 | `replicaCount` | Desired number of pods | `1` |
-| `image.repository` | Image | `h3poteto/yadockeri` |
-| `image.tag` | Image tag | `v0.4.0` |
+| `image.repository` | Image | `ghcr.io/h3poteto/yadockeri` |
+| `image.tag` | Image tag | `0.4.1` |
 | `resources` | Pod resource requests and limits | `{}` |
 | `nodeSelector` | Node labels for pod assignment | `{}` |
 | `tolerations` | List of node taints to tolerate | `{}` |
