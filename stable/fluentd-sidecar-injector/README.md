@@ -6,7 +6,7 @@ To install this chart with release name `my-injector`.
 
 ```
 $ helm repo add h3poteto-stable https://h3poteto.github.io/charts/stable
-$ helm install h3poteto-stable/fluentd-sidecar-injector my-injector --namespace kube-system
+$ helm install my-injector --namespace kube-system h3poteto-stable/fluentd-sidecar-injector
 ```
 
 ## Uninstalling
