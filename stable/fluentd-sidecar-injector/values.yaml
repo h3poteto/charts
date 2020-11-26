@@ -47,3 +47,19 @@ tolerations: []
 
 affinity: {}
 
+sidecarInjector:
+  collector: fluentd
+  fluentd: {}
+    # aggregatorHost: "my-fluentd-aggregator.logging.svc"
+    # aggregatorPort: 24224
+    # applicationLogDir: /var/opt/app/logs
+    # dockerImage: ghcr.io/h3poteto/fluentd-sidecar-injector:latest
+    # tagPrefix: my-log
+    # timeFormat: "%Y-%m-%dT%H:%M:%S%z"
+    # timeKey: time
+  fluentbit: {}
+    # aggregatorHost: "my-fluentd-aggregator.logging.svc"
+    # aggregatorPort: 24224
+    # applicationLogDir: /var/opt/app/logs
+    # dockerImage: ghcr.io/h3poteto/fluentd-sidecar-injector:latest
+    # tagPrefix: my-log
