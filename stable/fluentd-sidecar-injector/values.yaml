@@ -12,7 +12,6 @@ imagePullSecrets: []
 rbac:
   create: true
   serviceAccount:
-    name: ""
     # Annotations to add to the service account
     annotations: {}
     # The name of the service account to use.
