@@ -3,7 +3,17 @@ entries:
   fluentd-sidecar-injector:
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2020-12-30T23:43:19.656058+09:00"
+    created: "2021-01-29T20:14:40.331471891+09:00"
+    description: A Helm chart for fluentd-sidecar-injector
+    digest: cddeb780bb62cb14de353ff578f62fc382a709cf7a7f0ec00b7b87d851ae3367
+    name: fluentd-sidecar-injector
+    type: application
+    urls:
+    - fluentd-sidecar-injector-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.4.2
+    created: "2021-01-29T20:14:40.331108144+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 317b90c5b6c225f3d28d8cc7ffbf283b9a0197ecff444bd1be0b53611878657f
     name: fluentd-sidecar-injector
@@ -13,7 +23,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2020-12-30T23:43:19.655518+09:00"
+    created: "2021-01-29T20:14:40.330752783+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 331bbda8014240f740f8084a6a24672586adb7b77f28eb3b8316b736f700a1a2
     name: fluentd-sidecar-injector
@@ -23,7 +33,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2020-12-30T23:43:19.655051+09:00"
+    created: "2021-01-29T20:14:40.330347197+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: b708ab2885577f77b5fc5c5eed810a9dd75eac583da6f0987a05eaf50a5d7b0e
     name: fluentd-sidecar-injector
@@ -33,7 +43,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2020-12-30T23:43:19.654641+09:00"
+    created: "2021-01-29T20:14:40.329769436+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 1d73e7c8596af91ac50df15f3072d60b1950c5c960c2bca2804b0ab1b9802763
     name: fluentd-sidecar-injector
@@ -44,7 +54,19 @@ entries:
   kms-secrets:
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2020-12-30T23:43:19.65788+09:00"
+    created: "2021-01-29T20:14:40.334082542+09:00"
+    description: KMS Secrets Helm chart for Kubernetes
+    digest: 262562d1d18586006f8371acc58ab6cd7a1c95aba86728f3e921883c7d930acc
+    home: https://github.com/h3poteto/kms-secrets
+    name: kms-secrets
+    sources:
+    - https://github.com/h3poteto/kms-secrets
+    urls:
+    - kms-secrets-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v1
+    appVersion: 0.1.4
+    created: "2021-01-29T20:14:40.333825556+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: fed2c7322802fe412a3256c95909b7f6bb1f9ac69cfde8c40c3e8a9936b14140
     home: https://github.com/h3poteto/kms-secrets
@@ -56,7 +78,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 0.1.3
-    created: "2020-12-30T23:43:19.657519+09:00"
+    created: "2021-01-29T20:14:40.333441611+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 1f39ebf6d0ea6989361a91df0ed6b5e711a8debe9c98bca2fca8567be63fd971
     home: https://github.com/h3poteto/kms-secrets
@@ -68,7 +90,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 0.1.1
-    created: "2020-12-30T23:43:19.657186+09:00"
+    created: "2021-01-29T20:14:40.332541731+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 5aa37c01d66da07666af9505cdf95531a93d90bf0693d23dbd2592b364782a7f
     home: https://github.com/h3poteto/kms-secrets
@@ -80,7 +102,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2020-12-30T23:43:19.656841+09:00"
+    created: "2021-01-29T20:14:40.332243819+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 765ea0030d5d352d2a574c1d90053b6512b327bebcd97092fc7105ef0c163dfc
     home: https://github.com/h3poteto/kms-secrets
@@ -92,7 +114,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2020-12-30T23:43:19.656504+09:00"
+    created: "2021-01-29T20:14:40.33183695+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 34f19d2704f4fd65cf9f320f70debcf833010be5595da15a8ef47aa4a1798d10
     home: https://github.com/h3poteto/kms-secrets
@@ -105,7 +127,7 @@ entries:
   yadockeri:
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2020-12-30T23:43:19.658991+09:00"
+    created: "2021-01-29T20:14:40.335324468+09:00"
     description: Yadockeri Helm chart for Kubernetes
     digest: 8424619a334fc8c6802bf0562d1aa4049ffd08c454a36f4fa6cf6f680d059cf0
     name: yadockeri
@@ -115,7 +137,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2020-12-30T23:43:19.658434+09:00"
+    created: "2021-01-29T20:14:40.334581444+09:00"
     description: Yadockeri Helm chart for Kubernetes
     digest: 863fc166221ad4bcac63ca6d113099040141f642c3624f76131e82256130f5b9
     name: yadockeri
@@ -123,4 +145,4 @@ entries:
     urls:
     - yadockeri-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-30T23:43:19.654098+09:00"
+generated: "2021-01-29T20:14:40.327792402+09:00"
