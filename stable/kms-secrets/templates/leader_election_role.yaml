@@ -3,6 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: {{ .Release.Name }}-leader-election-role
+  namespace: {{ include "kms-secrets.namespace" . }}
 rules:
 - apiGroups:
   - ""
@@ -30,4 +31,16 @@ rules:
   - events
   verbs:
   - create
+- apiGroups:
+  - "coordination.k8s.io"
+  resources:
+  - leases
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
 {{- end -}}
