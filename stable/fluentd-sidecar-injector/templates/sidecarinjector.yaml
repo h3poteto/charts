@@ -2,7 +2,6 @@ apiVersion: operator.h3poteto.dev/v1alpha1
 kind: SidecarInjector
 metadata:
   name: {{ include "fluentd-sidecar-injector.name" . }}-fluentd
-  namespace: {{ include "fluentd-sidecar-injector.namespace" . }}
   annotations:
     helm.sh/hook: post-install,post-upgrade
 spec:
