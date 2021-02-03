@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   fluentd-sidecar-injector:
   - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2021-02-03T22:20:57.406567453+09:00"
+    description: A Helm chart for fluentd-sidecar-injector
+    digest: 9a80160852991d6052dee2dc42342db25b9519d4c53a44f2922b5787151b75d6
+    name: fluentd-sidecar-injector
+    type: application
+    urls:
+    - fluentd-sidecar-injector-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.4.2
-    created: "2021-02-03T00:16:01.625851937+09:00"
+    created: "2021-02-03T22:20:57.405870515+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: cddeb780bb62cb14de353ff578f62fc382a709cf7a7f0ec00b7b87d851ae3367
     name: fluentd-sidecar-injector
@@ -13,7 +23,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2021-02-03T00:16:01.625216514+09:00"
+    created: "2021-02-03T22:20:57.404989959+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 317b90c5b6c225f3d28d8cc7ffbf283b9a0197ecff444bd1be0b53611878657f
     name: fluentd-sidecar-injector
@@ -23,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2021-02-03T00:16:01.624492142+09:00"
+    created: "2021-02-03T22:20:57.404004606+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 331bbda8014240f740f8084a6a24672586adb7b77f28eb3b8316b736f700a1a2
     name: fluentd-sidecar-injector
@@ -33,7 +43,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2021-02-03T00:16:01.621910645+09:00"
+    created: "2021-02-03T22:20:57.403072312+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: b708ab2885577f77b5fc5c5eed810a9dd75eac583da6f0987a05eaf50a5d7b0e
     name: fluentd-sidecar-injector
@@ -43,7 +53,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2021-02-03T00:16:01.621235317+09:00"
+    created: "2021-02-03T22:20:57.402159877+09:00"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 1d73e7c8596af91ac50df15f3072d60b1950c5c960c2bca2804b0ab1b9802763
     name: fluentd-sidecar-injector
@@ -54,7 +64,7 @@ entries:
   kms-secrets:
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2021-02-03T00:16:01.628931727+09:00"
+    created: "2021-02-03T22:20:57.411226725+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: a8fd6d4627a062233a272f6d34947bce3205bde0db162c7434a7f0b55b836627
     home: https://github.com/h3poteto/kms-secrets
@@ -66,7 +76,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2021-02-03T00:16:01.628670151+09:00"
+    created: "2021-02-03T22:20:57.410546579+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 262562d1d18586006f8371acc58ab6cd7a1c95aba86728f3e921883c7d930acc
     home: https://github.com/h3poteto/kms-secrets
@@ -78,7 +88,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2021-02-03T00:16:01.628287507+09:00"
+    created: "2021-02-03T22:20:57.409903963+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: fed2c7322802fe412a3256c95909b7f6bb1f9ac69cfde8c40c3e8a9936b14140
     home: https://github.com/h3poteto/kms-secrets
@@ -90,7 +100,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 0.1.3
-    created: "2021-02-03T00:16:01.62794048+09:00"
+    created: "2021-02-03T22:20:57.409283951+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 1f39ebf6d0ea6989361a91df0ed6b5e711a8debe9c98bca2fca8567be63fd971
     home: https://github.com/h3poteto/kms-secrets
@@ -102,7 +112,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 0.1.1
-    created: "2021-02-03T00:16:01.627102755+09:00"
+    created: "2021-02-03T22:20:57.408414336+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 5aa37c01d66da07666af9505cdf95531a93d90bf0693d23dbd2592b364782a7f
     home: https://github.com/h3poteto/kms-secrets
@@ -114,7 +124,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2021-02-03T00:16:01.626722525+09:00"
+    created: "2021-02-03T22:20:57.407871981+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 765ea0030d5d352d2a574c1d90053b6512b327bebcd97092fc7105ef0c163dfc
     home: https://github.com/h3poteto/kms-secrets
@@ -126,7 +136,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2021-02-03T00:16:01.626298943+09:00"
+    created: "2021-02-03T22:20:57.4072426+09:00"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 34f19d2704f4fd65cf9f320f70debcf833010be5595da15a8ef47aa4a1798d10
     home: https://github.com/h3poteto/kms-secrets
@@ -139,7 +149,7 @@ entries:
   yadockeri:
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2021-02-03T00:16:01.63151716+09:00"
+    created: "2021-02-03T22:20:57.413696867+09:00"
     description: Yadockeri Helm chart for Kubernetes
     digest: 8424619a334fc8c6802bf0562d1aa4049ffd08c454a36f4fa6cf6f680d059cf0
     name: yadockeri
@@ -149,7 +159,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2021-02-03T00:16:01.63035983+09:00"
+    created: "2021-02-03T22:20:57.412184527+09:00"
     description: Yadockeri Helm chart for Kubernetes
     digest: 863fc166221ad4bcac63ca6d113099040141f642c3624f76131e82256130f5b9
     name: yadockeri
@@ -157,4 +167,4 @@ entries:
     urls:
     - yadockeri-0.1.0.tgz
     version: 0.1.0
-generated: "2021-02-03T00:16:01.620551963+09:00"
+generated: "2021-02-03T22:20:57.401132444+09:00"
