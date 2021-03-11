@@ -45,3 +45,26 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+nodemanager:
+  aws:
+    region: us-east-1
+    masters: {}
+      # desired: 3
+      # asgModfyCoolTimeSeconds: 600
+      # refreshSchedule: "59 0 * * 6"
+      # enableReplenish: true
+      # autoScalingGroups:
+      #   - name: masters-ap-northeast-1a.playground.k8s.h3poteto.dev
+      #   - name: masters-ap-northeast-1d.playground.k8s.h3poteto.dev
+      #   - name: masters-ap-northeast-1c.playground.k8s.h3poteto.dev
+
+    workers: {}
+      # desired: 5
+      # asgModfyCoolTimeSeconds: 600
+      # refreshSchedule: "59 0 * * 5"
+      # enableReplenish: true
+      # autoScalingGroups:
+      #   - name: nodes-ap-northeast-1a.playground.k8s.h3poteto.dev
+      #   - name: nodes-ap-northeast-1d.playground.k8s.h3poteto.dev
+      #   - name: nodes-ap-northeast-1c.playground.k8s.h3poteto.dev

@@ -1,0 +1,18 @@
+releases:
+  - name: node-manager
+    namespace: kube-system
+    chart: ../../stable/node-manager
+    version: 0.1.0
+    values:
+      - nodemanager:
+          aws:
+            region: ap-northeast-1
+            workers:
+              desired: 3
+              asgModifyCoolTimeSeconds: 600
+              refreshSchedule: "59 0 * * *"
+              enableReplenish: true
+              autoScalingGroups:
+                - name: nodes-ap-northeast-1a.playground.k8s.h3poteto.dev
+                - name: nodes-ap-northeast-1c.playground.k8s.h3poteto.dev
+                - name: nodes-ap-northeast-1d.playground.k8s.h3poteto.dev
