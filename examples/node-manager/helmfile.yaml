@@ -1,3 +1,6 @@
+helmDefaults:
+  wait: true
+
 releases:
   - name: node-manager
     namespace: kube-system
