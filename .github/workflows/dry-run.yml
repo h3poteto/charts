@@ -58,3 +58,9 @@ jobs:
         working-directory: ./examples/node-manager
         run: |
           helmfile sync
+      - name: Run fluentd-sidecar-injector
+        run: |
+          helm install --dry-run --debug fluentd-sidecar-injector -n kube-system ./stable/fluentd-sidecar-injector
+      - name: Run kms-secrets
+        run: |
+          helm install --dry-run --debug kms-secrets -n kube-system ./stable/kms-secrets
