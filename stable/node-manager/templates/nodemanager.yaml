@@ -1,0 +1,19 @@
+apiVersion: operator.h3poteto.dev/v1alpha1
+kind: NodeManager
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ include "node-manager.namespace" . }}
+  annotations:
+    helm.sh/hook: post-install,post-upgrade
+spec:
+  cloudProvider: aws
+  aws:
+    region: {{ .Values.nodemanager.aws.region }}
+    {{- with .Values.nodemanager.aws.masters }}
+    masters:
+      {{- toYaml . | nindent 6 }}
+    {{- end -}}
+    {{- with .Values.nodemanager.aws.workers }}
+    workers:
+      {{- toYaml . | nindent 6 }}
+    {{- end -}}

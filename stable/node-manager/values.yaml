@@ -1,0 +1,70 @@
+# Default values for node-manager.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: ghcr.io/h3poteto/node-manager
+  pullPolicy: IfNotPresent
+  tag: 0.1.0
+
+imagePullSecrets: []
+
+rbac:
+  create: true
+  serviceAccount:
+    # Annotations to add to the service account
+    annotations: {}
+    # The name of the service account to use.
+    # If not set and create is true, a name is generated.
+    name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 1000Mi
+  requests:
+    cpu: 100m
+    memory: 200Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+nodemanager:
+  aws:
+    region: us-east-1
+    masters: {}
+      # desired: 3
+      # asgModfyCoolTimeSeconds: 600
+      # refreshSchedule: "59 0 * * 6"
+      # enableReplenish: true
+      # autoScalingGroups:
+      #   - name: masters-ap-northeast-1a.playground.k8s.h3poteto.dev
+      #   - name: masters-ap-northeast-1d.playground.k8s.h3poteto.dev
+      #   - name: masters-ap-northeast-1c.playground.k8s.h3poteto.dev
+
+    workers: {}
+      # desired: 5
+      # asgModfyCoolTimeSeconds: 600
+      # refreshSchedule: "59 0 * * 5"
+      # enableReplenish: true
+      # autoScalingGroups:
+      #   - name: nodes-ap-northeast-1a.playground.k8s.h3poteto.dev
+      #   - name: nodes-ap-northeast-1d.playground.k8s.h3poteto.dev
+      #   - name: nodes-ap-northeast-1c.playground.k8s.h3poteto.dev
