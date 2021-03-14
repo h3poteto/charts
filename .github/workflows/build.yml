@@ -1,4 +1,4 @@
-name: dry-run
+name: Build
 
 on:
   push:
@@ -14,7 +14,7 @@ env:
   HELMFILE_VERSION: v0.138.7
 
 jobs:
-  dry-run:
+  build:
     runs-on: ubuntu-latest
 
     steps:
