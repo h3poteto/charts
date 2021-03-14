@@ -18,6 +18,8 @@ $ helm delete my-manager -n kube-system
 ```
 
 ## Configuration
+Please refer [example](../../examples/node-manager) to know more details.
+
 Parameter | Description | Default
 |---------|---------|---------|
 | `image.repository` | The image repository to pull from | `ghcr.io/h3poteto/node-manager` |
@@ -37,15 +39,15 @@ Parameter | Description | Default
 | `nodeSelector` |NodeSelector object for the Controller Pods | `{}` |
 | `tolerations` | Tolerations array for the Controller Pods | `{}` |
 | `affinity` |Affinity object for the Controller Pods | `{}`|
-| `nodeManager.aws.region` | AWS region of your cluster is located | `us-east-1` |
-| `nodeManager.aws.masters.desired` | Desired count of master instances | `""` |
-| `nodeManager.aws.masters.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoSaclingGroup | `""`|
-| `nodeManager.aws.masters.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 5` | `""` |
-| `nodeManager.aws.masters.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
-| `nodeManager.aws.masters.autoScalingGroups` | AWS AutoScalingGroup names for masters | `[]` |
-| `nodeManager.aws.workers.desired` | Desired count of worker instances | `""` |
-| `nodeManager.aws.workers.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoScalingGroup | `""` |
-| `nodeManager.aws.workers.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 6` | `""` |
-| `nodeManager.aws.workers.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
-| `nodeManager.aws.workers.autoScalingGroups` | AWS AutoScalingGroup names for workers | `[]` |
+| `nodemanager.aws.region` | AWS region of your cluster is located | `us-east-1` |
+| `nodemanager.aws.masters.desired` | Desired count of master instances | `""` |
+| `nodemanager.aws.masters.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoSaclingGroup | `""`|
+| `nodemanager.aws.masters.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 5` | `""` |
+| `nodemanager.aws.masters.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
+| `nodemanager.aws.masters.autoScalingGroups` | AWS AutoScalingGroup names for masters | `[]` |
+| `nodemanager.aws.workers.desired` | Desired count of worker instances | `""` |
+| `nodemanager.aws.workers.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoScalingGroup | `""` |
+| `nodemanager.aws.workers.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 6` | `""` |
+| `nodemanager.aws.workers.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
+| `nodemanager.aws.workers.autoScalingGroups` | AWS AutoScalingGroup names for workers | `[]` |
 
