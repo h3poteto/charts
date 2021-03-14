@@ -1,0 +1,60 @@
+name: dry-run
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+
+env:
+  KIND_VERSION: v0.10.0
+  KUBECTL_VERSION: v1.20.2
+  HELM_VERSION: v3.5.3
+  HELMFILE_VERSION: v0.138.7
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: engineerd/setup-kind@v0.5.0
+        with:
+          version: ${{ env.KIND_VERSION }}
+      - name: Install kubectl
+        env:
+          KUBECTL_VERSION: ${{ env.KUBECTL_VERSION }}
+          BIN_DIR: ${{ github.workspace }}/tools
+        run: |
+          mkdir -p $BIN_DIR
+          curl -sSLo "$BIN_DIR/kubectl" "https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
+          chmod +x "$BIN_DIR/kubectl"
+          echo "$BIN_DIR" >> "$GITHUB_PATH"
+      - name: Install helm
+        env:
+          HELM_VERSION: ${{ env.HELM_VERSION }}
+          BIN_DIR: ${{ github.workspace }}/tools
+        run: |
+          mkdir -p $BIN_DIR
+          curl -sSLo "$BIN_DIR/helm-${HELM_VERSION}-linux-amd64.tar.gz" "https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz"
+          tar -xvf "$BIN_DIR/helm-${HELM_VERSION}-linux-amd64.tar.gz"
+          mv "linux-amd64/helm" "$BIN_DIR/helm"
+          chmod +x "$BIN_DIR/helm"
+          echo "$BIN_DIR" >> "$GITHUB_PATH"
+      - name: Install helmfile
+        env:
+          HELMFILE_VERSION: ${{ env.HELMFILE_VERSION }}
+          BIN_DIR: ${{ github.workspace }}/tools
+        run: |
+          mkdir -p $BIN_DIR
+          curl -sSLo "$BIN_DIR/helmfile" "https://github.com/roboll/helmfile/releases/download/${HELMFILE_VERSION}/helmfile_linux_amd64"
+          chmod +x "$BIN_DIR/helmfile"
+          echo "$BIN_DIR" >> "$GITHUB_PATH"
+      - name: Run node-manager
+        run: |
+          helm install --dry-run --debug node-manager -n kube-system ./stable/node-manager
+      - name: Install node-manager
+        working-directory: ./examples/node-manager
+        run: |
+          helmfile sync
