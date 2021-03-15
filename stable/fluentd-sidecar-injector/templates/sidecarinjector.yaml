@@ -2,8 +2,6 @@ apiVersion: operator.h3poteto.dev/v1alpha1
 kind: SidecarInjector
 metadata:
   name: {{ include "fluentd-sidecar-injector.name" . }}-fluentd
-  annotations:
-    helm.sh/hook: post-install,post-upgrade
 spec:
   collector: {{ .Values.sidecarInjector.collector }}
   {{- with .Values.sidecarInjector.fluentd }}
