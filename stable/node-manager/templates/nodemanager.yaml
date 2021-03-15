@@ -3,8 +3,6 @@ kind: NodeManager
 metadata:
   name: {{ .Release.Name }}
   namespace: {{ include "node-manager.namespace" . }}
-  annotations:
-    helm.sh/hook: post-install,post-upgrade
 spec:
   cloudProvider: aws
   aws:
