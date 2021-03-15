@@ -53,14 +53,14 @@ jobs:
           echo "$BIN_DIR" >> "$GITHUB_PATH"
       - name: Run node-manager
         run: |
-          helm install --dry-run --debug node-manager -n kube-system ./stable/node-manager
+          helm template --debug node-manager -n kube-system ./stable/node-manager
       - name: Install node-manager
         working-directory: ./examples/node-manager
         run: |
           helmfile sync
       - name: Run fluentd-sidecar-injector
         run: |
-          helm install --dry-run --debug fluentd-sidecar-injector -n kube-system ./stable/fluentd-sidecar-injector
+          helm template --debug fluentd-sidecar-injector -n kube-system ./stable/fluentd-sidecar-injector
       - name: Run kms-secrets
         run: |
-          helm install --dry-run --debug kms-secrets -n kube-system ./stable/kms-secrets
+          helm template --debug kms-secrets -n kube-system ./stable/kms-secrets
