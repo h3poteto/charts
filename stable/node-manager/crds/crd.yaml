@@ -61,6 +61,10 @@ spec:
                 type: string
               role:
                 type: string
+              surplusNodes:
+                default: 1
+                format: int64
+                type: integer
             required:
             - asgModifyCoolTimeSeconds
             - autoScalingGroups
@@ -123,6 +127,31 @@ spec:
                 - name
                 - namespace
                 type: object
+              notJoinedAwsNodes:
+                items:
+                  properties:
+                    autoScalingGroupName:
+                      type: string
+                    availabilityZone:
+                      type: string
+                    creationTimestamp:
+                      format: date-time
+                      type: string
+                    instanceID:
+                      type: string
+                    instanceType:
+                      type: string
+                    name:
+                      type: string
+                  required:
+                  - autoScalingGroupName
+                  - availabilityZone
+                  - creationTimestamp
+                  - instanceID
+                  - instanceType
+                  - name
+                  type: object
+                type: array
               phase:
                 default: init
                 type: string
@@ -207,6 +236,10 @@ spec:
                 type: string
               schedule:
                 type: string
+              surplusNodes:
+                default: 1
+                format: int64
+                type: integer
             required:
             - asgModifyCoolTimeSeconds
             - autoScalingGroups
@@ -400,6 +433,31 @@ spec:
                 format: date-time
                 nullable: true
                 type: string
+              notJoinedAWSNodes:
+                items:
+                  properties:
+                    autoScalingGroupName:
+                      type: string
+                    availabilityZone:
+                      type: string
+                    creationTimestamp:
+                      format: date-time
+                      type: string
+                    instanceID:
+                      type: string
+                    instanceType:
+                      type: string
+                    name:
+                      type: string
+                  required:
+                  - autoScalingGroupName
+                  - availabilityZone
+                  - creationTimestamp
+                  - instanceID
+                  - instanceType
+                  - name
+                  type: object
+                type: array
               phase:
                 default: init
                 type: string
@@ -481,6 +539,10 @@ spec:
                       refreshSchedule:
                         nullable: true
                         type: string
+                      surplusNodes:
+                        default: 1
+                        format: int64
+                        type: integer
                     required:
                     - asgModifyCoolTimeSeconds
                     - autoScalingGroups
@@ -514,6 +576,10 @@ spec:
                       refreshSchedule:
                         nullable: true
                         type: string
+                      surplusNodes:
+                        default: 1
+                        format: int64
+                        type: integer
                     required:
                     - asgModifyCoolTimeSeconds
                     - autoScalingGroups
