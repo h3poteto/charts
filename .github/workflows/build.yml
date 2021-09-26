@@ -64,3 +64,7 @@ jobs:
       - name: Run kms-secrets
         run: |
           helm template --debug kms-secrets -n kube-system ./stable/kms-secrets
+      - name: Run eks-pod-identity-webhook-installer
+        run: |
+          helm template --debug eks-pod-identity-webhook-installer -n kube-system ./stable/eks-pod-identity-webhook-installer
+
