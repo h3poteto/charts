@@ -3,6 +3,6 @@ kind: EKSPodIdentityWebhook
 metadata:
   name: {{ .Release.Name }}
 spec:
-  issuerHost: {{ .Values.eksPodIdentityWebhookInstaller.issuerHost }}
+  tokenAudience: {{ .Values.eksPodIdentityWebhookInstaller.tokenAudience }}
   namespace: {{ .Values.eksPodIdentityWebhookInstaller.namespace }}
 
