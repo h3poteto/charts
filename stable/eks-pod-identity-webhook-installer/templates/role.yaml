@@ -49,6 +49,14 @@ rules:
   - patch
   - update
 - apiGroups:
+  - certificates.k8s.io
+  resources:
+  - signers
+  resourceNames:
+  - kubernetes.io/*
+  verbs:
+  - approve
+- apiGroups:
   - ""
   resources:
   - events
