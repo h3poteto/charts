@@ -38,6 +38,9 @@ spec:
             - /fluentd-sidecar-injector
             - controller
             - sidecar-injector
+          {{- if .Values.useCertManager }}
+            - --use-cert-manager
+          {{- end }}
           env:
             - name: POD_NAME
               valueFrom:
