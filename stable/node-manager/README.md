@@ -42,11 +42,13 @@ Parameter | Description | Default
 | `nodemanager.aws.region` | AWS region of your cluster is located | `us-east-1` |
 | `nodemanager.aws.masters.desired` | Desired count of master instances | `""` |
 | `nodemanager.aws.masters.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoSaclingGroup | `""`|
+| `nodemanager.aws.nasters.drainGracePeriodSeconds` | Grace period seconds when drain | `""` |
 | `nodemanager.aws.masters.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 5` | `""` |
 | `nodemanager.aws.masters.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
 | `nodemanager.aws.masters.autoScalingGroups` | AWS AutoScalingGroup names for masters | `[]` |
 | `nodemanager.aws.workers.desired` | Desired count of worker instances | `""` |
 | `nodemanager.aws.workers.asgModifyCoolTimeSeconds` | Cool time seconds after modify AWS AutoScalingGroup | `""` |
+| `nodemanager.aws.workers.drainGracePeriodSeconds` | Grace period seconds when drain | `""` |
 | `nodemanager.aws.workers.refreshSchedule` | Refresh schedule formatted cron, for example `23 10 * * 6` | `""` |
 | `nodemanager.aws.workers.enableReplenish` | If false, node-manager does not replenish nodes | `true` |
 | `nodemanager.aws.workers.autoScalingGroups` | AWS AutoScalingGroup names for workers | `[]` |
