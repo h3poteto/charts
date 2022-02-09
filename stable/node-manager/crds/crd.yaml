@@ -2,7 +2,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.4.1
+    controller-gen.kubebuilder.io/version: v0.7.0
   creationTimestamp: null
   name: awsnodemanagers.operator.h3poteto.dev
 spec:
@@ -52,6 +52,9 @@ spec:
               desired:
                 format: int32
                 type: integer
+              drainGracePeriodSeconds:
+                format: int64
+                type: integer
               enableReplenish:
                 default: true
                 type: boolean
@@ -69,6 +72,7 @@ spec:
             - asgModifyCoolTimeSeconds
             - autoScalingGroups
             - desired
+            - drainGracePeriodSeconds
             - enableReplenish
             - region
             - role
@@ -87,10 +91,12 @@ spec:
                       format: date-time
                       type: string
                     instanceID:
+                      description: InstanceID of EC2 instances
                       type: string
                     instanceType:
                       type: string
                     name:
+                      description: Node name in the Kubernetes cluster
                       type: string
                   required:
                   - autoScalingGroupName
@@ -138,10 +144,12 @@ spec:
                       format: date-time
                       type: string
                     instanceID:
+                      description: InstanceID of EC2 instances
                       type: string
                     instanceType:
                       type: string
                     name:
+                      description: Node name in the Kubernetes cluster
                       type: string
                   required:
                   - autoScalingGroupName
@@ -180,7 +188,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.4.1
+    controller-gen.kubebuilder.io/version: v0.7.0
   creationTimestamp: null
   name: awsnoderefreshers.operator.h3poteto.dev
 spec:
@@ -230,6 +238,9 @@ spec:
               desired:
                 format: int32
                 type: integer
+              drainGracePeriodSeconds:
+                format: int64
+                type: integer
               region:
                 type: string
               role:
@@ -244,6 +255,7 @@ spec:
             - asgModifyCoolTimeSeconds
             - autoScalingGroups
             - desired
+            - drainGracePeriodSeconds
             - region
             - role
             - schedule
@@ -262,10 +274,12 @@ spec:
                       format: date-time
                       type: string
                     instanceID:
+                      description: InstanceID of EC2 instances
                       type: string
                     instanceType:
                       type: string
                     name:
+                      description: Node name in the Kubernetes cluster
                       type: string
                   required:
                   - autoScalingGroupName
@@ -298,10 +312,12 @@ spec:
                     format: date-time
                     type: string
                   instanceID:
+                    description: InstanceID of EC2 instances
                     type: string
                   instanceType:
                     type: string
                   name:
+                    description: Node name in the Kubernetes cluster
                     type: string
                 required:
                 - autoScalingGroupName
@@ -340,7 +356,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.4.1
+    controller-gen.kubebuilder.io/version: v0.7.0
   creationTimestamp: null
   name: awsnodereplenishers.operator.h3poteto.dev
 spec:
@@ -415,10 +431,12 @@ spec:
                       format: date-time
                       type: string
                     instanceID:
+                      description: InstanceID of EC2 instances
                       type: string
                     instanceType:
                       type: string
                     name:
+                      description: Node name in the Kubernetes cluster
                       type: string
                   required:
                   - autoScalingGroupName
@@ -444,10 +462,12 @@ spec:
                       format: date-time
                       type: string
                     instanceID:
+                      description: InstanceID of EC2 instances
                       type: string
                     instanceType:
                       type: string
                     name:
+                      description: Node name in the Kubernetes cluster
                       type: string
                   required:
                   - autoScalingGroupName
@@ -484,7 +504,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.4.1
+    controller-gen.kubebuilder.io/version: v0.7.0
   creationTimestamp: null
   name: nodemanagers.operator.h3poteto.dev
 spec:
