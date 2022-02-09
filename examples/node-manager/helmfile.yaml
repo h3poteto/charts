@@ -10,6 +10,7 @@ releases:
             masters:
               desired: 3
               asgModifyCoolTimeSeconds: 600
+              drainGracePeriodSeconds: 300
               refreshSchedule: "59 0 * * *"
               enableReplenish: true
               autoScalingGroups:
@@ -19,6 +20,7 @@ releases:
             workers:
               desired: 2
               asgModifyCoolTimeSeconds: 600
+              drainGracePeriodSeconds: 300
               refreshSchedule: "59 0 * * *"
               enableReplenish: true
               autoScalingGroups:

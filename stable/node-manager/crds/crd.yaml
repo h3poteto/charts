@@ -553,6 +553,9 @@ spec:
                       desired:
                         format: int32
                         type: integer
+                      drainGracePeriodSeconds:
+                        format: int64
+                        type: integer
                       enableReplenish:
                         default: true
                         type: boolean
@@ -567,6 +570,7 @@ spec:
                     - asgModifyCoolTimeSeconds
                     - autoScalingGroups
                     - desired
+                    - drainGracePeriodSeconds
                     - enableReplenish
                     - refreshSchedule
                     type: object
@@ -590,6 +594,9 @@ spec:
                       desired:
                         format: int32
                         type: integer
+                      drainGracePeriodSeconds:
+                        format: int64
+                        type: integer
                       enableReplenish:
                         default: true
                         type: boolean
@@ -604,6 +611,7 @@ spec:
                     - asgModifyCoolTimeSeconds
                     - autoScalingGroups
                     - desired
+                    - drainGracePeriodSeconds
                     - enableReplenish
                     - refreshSchedule
                     type: object
