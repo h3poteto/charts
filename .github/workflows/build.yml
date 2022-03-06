@@ -8,10 +8,10 @@ on:
   pull_request:
 
 env:
-  KIND_VERSION: v0.10.0
-  KUBECTL_VERSION: v1.20.2
-  HELM_VERSION: v3.5.3
-  HELMFILE_VERSION: v0.138.7
+  KIND_VERSION: v0.11.1
+  KUBECTL_VERSION: v1.21.10
+  HELM_VERSION: v3.8.0
+  HELMFILE_VERSION: v0.143.0
 
 jobs:
   build:
@@ -67,4 +67,6 @@ jobs:
       - name: Run eks-pod-identity-webhook-installer
         run: |
           helm template --debug eks-pod-identity-webhook-installer -n kube-system ./stable/eks-pod-identity-webhook-installer
-
+      - name: Run aws-global-accelerator-controller
+        run: |
+          helm template --debug global-accelerator-controller -n kube-system ./stable/aws-global-accelerator-controller
