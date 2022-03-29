@@ -13,6 +13,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 clusterName: "default"
+verbose: false
 
 rbac:
   create: true
