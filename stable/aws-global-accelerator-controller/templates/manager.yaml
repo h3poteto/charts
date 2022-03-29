@@ -38,7 +38,9 @@ spec:
             - /aws-global-accelerator-controller
             - controller
             - --cluster-name={{ .Values.clusterName }}
+            {{- if .Values.verbose }}
             - --v=4
+            {{- end }}
           env:
             - name: POD_NAME
               valueFrom:
