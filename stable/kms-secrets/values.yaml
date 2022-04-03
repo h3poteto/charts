@@ -2,7 +2,7 @@ nameOverride: ""
 
 image:
   repository: ghcr.io/h3poteto/kms-secrets
-  tag: 0.3.0
+  tag: 0.4.0
 
 rbac:
   create: true
