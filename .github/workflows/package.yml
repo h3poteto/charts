@@ -1,0 +1,45 @@
+name: Package
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - uses: azure/setup-helm@v1
+      - name: Package charts
+        working-directory: stable
+        run: |
+          helm package aws-global-accelerator-controller
+          helm package fluentd-sidecar-injector
+          helm package kms-secrets
+          helm package node-manager
+      - name: Check new packages
+        working-directory: stable
+        id: check
+        run: |
+          git checkout .
+          git add -N .
+          git status
+          git diff --name-only --diff-filter=A --exit-code --quiet
+          echo "No need to update"
+        continue-on-error: true
+      - name: Add new packages
+        working-directory: stable
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "Need to update index"
+          set -x
+          helm repo index .
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit --author=. -m 'Update package index'
+          git push
+
