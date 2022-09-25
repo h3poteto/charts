@@ -71,7 +71,7 @@ db:
   create: true
   image:
     repository: postgres
-    tag: 11.7
+    tag: 14.5
   resources: {}
   user: root
   password: docker
