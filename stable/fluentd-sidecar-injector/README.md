@@ -21,7 +21,7 @@ $ helm delete my-injector -n kube-system
 Parameter | Description | Default
 |---------|---------|---------|
 | `image.repository` | The image repository to pull from | `ghcr.io/h3poteto/fluentd-sidecar-injector` |
-| `image.tag` | The image tag to pull | `0.7.0` |
+| `image.tag` | The image tag to pull | `0.8.0` |
 | `rbac.create` | If true, create RBAC resources | `true` |
 | `rbac.serviceAccount.name` | Existing ServiceAccount to use (ignore if rbac.create=true) | `default` |
 | `rbac.serviceAccount.annotations` | Annotations to add to the ServiceAccount (ignore if rbac.create=false) | `{}` |
