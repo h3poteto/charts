@@ -24,7 +24,7 @@ Parameter | Description | Default
 |---------|---------|---------|
 | `image.repository` | The image repository to pull from | `ghcr.io/h3poteto/node-manager` |
 | `image.pullPolicy` | The pull policy for the image | `IfNotPresent` |
-| `image.tag` | The image tag to pull | `0.4.1` |
+| `image.tag` | The image tag to pull | `0.5.0` |
 | `imagePullSecrets` | Secret names to pull the image | `[]` |
 | `rbac.create` | If true, create RBAC resources | `true` |
 | `rbac.serviceAccount.name` | Existing ServiceAccount to use (ignore if rbac.create=true) | `default` |
