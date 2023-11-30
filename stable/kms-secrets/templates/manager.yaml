@@ -18,6 +18,14 @@ spec:
       annotations: {{ toYaml . | nindent 8 }}
       {{- end }}
     spec:
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       serviceAccountName: {{ include "kms-secrets.serviceAccountName" . }}
       securityContext:
         # We have to specify groupID to mount IRSA volumes.
@@ -30,11 +38,8 @@ spec:
         - --enable-leader-election
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         name: manager
+        {{- with .Values.resources }}
         resources:
-          limits:
-            cpu: 100m
-            memory: 30Mi
-          requests:
-            cpu: 100m
-            memory: 20Mi
+          {{- toYaml . | nindent 10 }}
+        {{- end }}
       terminationGracePeriodSeconds: 10
