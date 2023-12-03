@@ -23,6 +23,9 @@ Parameter | Description | Default
 | `namespace` | Namespace which you want to install | `kube-system` |
 | `image.repository` | The image repository to pull from | `ghcr.io/h3poteto/kms-secrets` |
 | `image.tag` | The image tag to pull | `0.1.4` |
+| `tolerations` | A list of Node Tolerations | `[]` |
+| `nodeSelector` | Node Selector for the pods | `{}` |
+| `resources` | Resources for the `manager` container | `{ limits: { cpu: 100m, memory: 30Mi }, requests: { cpu: 100m, memory: 20Mi }` |
 | `rbac.create` | If true, create RBAC resources | `true` |
 | `rbac.serviceAccountName` | existing ServiceAccount to use (ignored if rbac.create=true) | `default` |
 | `rbac.serviceAccount.annotations` | Annotations to add to the Service Account (ignore if rbac.create=false) | `{}` |

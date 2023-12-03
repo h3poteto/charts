@@ -4,6 +4,17 @@ image:
   repository: ghcr.io/h3poteto/kms-secrets
   tag: 0.4.0
 
+resources:
+  limits:
+    cpu: 100m
+    memory: 30Mi
+  requests:
+    cpu: 100m
+    memory: 20Mi
+
+tolerations: {}
+nodeSelector: {}
+
 rbac:
   create: true
   serviceAccountName: ""
