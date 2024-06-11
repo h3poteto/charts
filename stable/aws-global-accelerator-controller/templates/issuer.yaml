@@ -1,0 +1,9 @@
+{{- if .Values.webhook.enabled }}
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: {{ .Values.webhook.issuerName }}
+  namespace: {{ include "aws-global-accelerator-controller.namespace" . }}
+spec:
+  selfSigned: {}
+{{- end -}}

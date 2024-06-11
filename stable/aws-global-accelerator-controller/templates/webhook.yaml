@@ -1,17 +1,18 @@
+{{- if .Values.webhook.enabled }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "aws-global-accelerator-controller.name" . }}-manager
+  name: {{ include "aws-global-accelerator-controller.name" . }}-webhook
   namespace: {{ include "aws-global-accelerator-controller.namespace" . }}
   labels:
     h3poteto.dev: aws-global-accelerator-controller
-    role: manager
+    role: webhook
 spec:
   replicas: 1
   selector:
     matchLabels:
       h3poteto.dev: aws-global-accelerator-controller
-      role: manager
+      role: webhook
   template:
     metadata:
     {{- with .Values.podAnnotations }}
@@ -20,7 +21,7 @@ spec:
     {{- end }}
       labels:
         h3poteto.dev: aws-global-accelerator-controller
-        role: manager
+        role: webhook
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
@@ -29,8 +30,12 @@ spec:
       serviceAccountName: {{ include "aws-global-accelerator-controller.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+        - name: webhook-tls
+          secret:
+            secretName: {{ .Values.webhook.certificateSecretName }}
       containers:
-        - name: manager
+        - name: webhook
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -39,20 +44,17 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           args:
             - /aws-global-accelerator-controller
-            - controller
-            - --cluster-name={{ .Values.clusterName }}
-            {{- if .Values.verbose }}
-            - --v=4
-            {{- end }}
-          env:
-            - name: POD_NAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.name
-            - name: POD_NAMESPACE
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.namespace
+            - webhook
+            - --tls-cert-file=/etc/webhook/certs/tls.crt
+            - --tls-private-key-file=/etc/webhook/certs/tls.key
+          ports:
+            - name: https
+              containerPort: 8443
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /etc/webhook/certs
+              name: webhook-tls
+              readOnly: true
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -65,3 +67,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+{{- end -}}

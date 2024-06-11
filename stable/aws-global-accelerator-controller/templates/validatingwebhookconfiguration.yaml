@@ -1,0 +1,29 @@
+{{- if .Values.webhook.enabled }}
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingWebhookConfiguration
+metadata:
+  name: aws-global-accelerator-validation
+  annotations:
+    cert-manager.io/inject-ca-from: {{ include "aws-global-accelerator-controller.namespace" . }}/{{ .Values.webhook.certificateName }}
+webhooks:
+- admissionReviewVersions:
+  - v1
+  clientConfig:
+    service:
+      name: {{ .Values.webhook.serviceName }}
+      namespace: {{ include "aws-global-accelerator-controller.namespace" . }}
+      path: /validate-endpointgroupbinding
+  failurePolicy: Fail
+  name: validate-endpointgroupbinding.h3poteto.dev
+  rules:
+  - apiGroups:
+    - operator.h3poteto.dev
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - endpointgroupbindings
+  sideEffects: None
+{{- end -}}
