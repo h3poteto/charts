@@ -1,8 +1,8 @@
-{{- if .Values.webhook.enabled }}
+{{- if .Values.webhook.enabled && .Values.webhook.certManager.enabled }}
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ .Values.webhook.certificateName }}
+  name: {{ .Values.webhook.certManager.certificateName }}
   namespace: {{ include "aws-global-accelerator-controller.namespace" . }}
 spec:
   dnsNames:
@@ -10,6 +10,6 @@ spec:
   - {{ .Values.webhook.serviceName }}.{{ include "aws-global-accelerator-controller.namespace" . }}.svc.cluster.local
   issuerRef:
     kind: Issuer
-    name: {{ .Values.webhook.issuerName }}
-  secretName: {{ .Values.webhook.certificateSecretName }}
+    name: {{ .Values.webhook.certManager.issuerName }}
+  secretName: {{ .Values.webhook.certManager.certificateSecretName }}
 {{- end -}}
