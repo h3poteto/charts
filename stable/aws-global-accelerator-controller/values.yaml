@@ -53,7 +53,14 @@ affinity: {}
 
 webhook:
   enabled: true
-  certificateName: aws-global-accelerator-cert
-  serviceName: aws-global-accelerator-validation
-  issuerName: issuer
-  certificateSecretName: aws-global-accelerator-tls
+  port: 8443
+  https:
+    enabled: true
+    tlsCertFile: ""
+    tlsKeyFile: ""
+  certManager:
+    enabled: true
+    certificateName: aws-global-accelerator-cert
+    serviceName: aws-global-accelerator-validation
+    issuerName: issuer
+    certificateSecretName: aws-global-accelerator-tls
