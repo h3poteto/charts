@@ -57,8 +57,8 @@ webhook:
   serviceName: aws-global-accelerator-validation
   https:
     enabled: true
-    tlsCertFile: ""
-    tlsKeyFile: ""
+    tlsCertFile: "/etc/webhook/certs/tls.crt"
+    tlsKeyFile: "/etc/webhook/certs/tls.key"
   certManager:
     enabled: true
     certificateName: aws-global-accelerator-cert

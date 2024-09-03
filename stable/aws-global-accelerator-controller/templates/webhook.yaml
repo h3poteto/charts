@@ -45,16 +45,22 @@ spec:
           args:
             - /aws-global-accelerator-controller
             - webhook
-            - --tls-cert-file=/etc/webhook/certs/tls.crt
-            - --tls-private-key-file=/etc/webhook/certs/tls.key
+            - --port={{ .Values.webhook.port }}
+            {{ if .Values.webook.https.enabled }}
+            - --ssl
+            - --tls-cert-file={{ .Values.webhook.https.tlsCertFile }}
+            - --tls-private-key-file={{ .Values.webhook.https.tlsKeyFile }}
+            {{ end }}
           ports:
             - name: https
-              containerPort: 8443
+              containerPort: {{ .Values.webhook.port }}
               protocol: TCP
           volumeMounts:
+            {{ if .Values.webhook.certManager.enabled }}
             - mountPath: /etc/webhook/certs
               name: webhook-tls
               readOnly: true
+            {{ end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
