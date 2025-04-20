@@ -3,7 +3,7 @@ entries:
   aws-global-accelerator-controller:
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2024-12-24T15:33:54.26775997Z"
+    created: "2025-04-20T15:39:25.954769895Z"
     description: A Helm chart for Kubernetes
     digest: 53b6428209a97f6c3c835bbc614bce9a080a06aea4d80686a4b0a30c18a67e3d
     name: aws-global-accelerator-controller
@@ -13,7 +13,7 @@ entries:
     version: 0.9.0
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2024-12-24T15:33:54.267467553Z"
+    created: "2025-04-20T15:39:25.954125053Z"
     description: A Helm chart for Kubernetes
     digest: 1c05a2eb197e675b27def0e4fce2fc09913b80846dc656f68792aa3ba83f4407
     name: aws-global-accelerator-controller
@@ -23,7 +23,7 @@ entries:
     version: 0.8.1
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2024-12-24T15:33:54.267165157Z"
+    created: "2025-04-20T15:39:25.953358847Z"
     description: A Helm chart for Kubernetes
     digest: 293547d7598ed0cf9fa0beb1f33c1f5b860f0207e36cea49ab201feaa39ad0be
     name: aws-global-accelerator-controller
@@ -33,7 +33,7 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 0.12.4
-    created: "2024-12-24T15:33:54.266849967Z"
+    created: "2025-04-20T15:39:25.953046496Z"
     description: A Helm chart for Kubernetes
     digest: 31ecea7a851253df289f7dc1ca576dff09f1ad0d0b5d596c2cbe22309cb244a3
     name: aws-global-accelerator-controller
@@ -43,7 +43,7 @@ entries:
     version: 0.7.4
   - apiVersion: v2
     appVersion: 0.12.3
-    created: "2024-12-24T15:33:54.266239188Z"
+    created: "2025-04-20T15:39:25.952789017Z"
     description: A Helm chart for Kubernetes
     digest: 53561019c06cbfb620a36c30b998197c47aaa48e0c6031e7f582c93f5105bb39
     name: aws-global-accelerator-controller
@@ -53,7 +53,7 @@ entries:
     version: 0.7.3
   - apiVersion: v2
     appVersion: 0.12.2
-    created: "2024-12-24T15:33:54.265587338Z"
+    created: "2025-04-20T15:39:25.952527259Z"
     description: A Helm chart for Kubernetes
     digest: f7821b99020edb7e44db512dea7bbfef28af13371a21a4605256ab51cd75c3a9
     name: aws-global-accelerator-controller
@@ -63,7 +63,7 @@ entries:
     version: 0.7.2
   - apiVersion: v2
     appVersion: 0.12.1
-    created: "2024-12-24T15:33:54.265346487Z"
+    created: "2025-04-20T15:39:25.952261374Z"
     description: A Helm chart for Kubernetes
     digest: 0b4736bba465662e0f552c6fdc588bd4e86a50ca28b8677b9a5b2e628f6dd2ec
     name: aws-global-accelerator-controller
@@ -73,7 +73,7 @@ entries:
     version: 0.7.1
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2024-12-24T15:33:54.265109714Z"
+    created: "2025-04-20T15:39:25.952023401Z"
     description: A Helm chart for Kubernetes
     digest: bc3b63f5a48a8ea5004e81b286d0cc5d03a703aa22d5b18efb71a9ff69181ed3
     name: aws-global-accelerator-controller
@@ -83,7 +83,7 @@ entries:
     version: 0.7.0
   - apiVersion: v2
     appVersion: 0.10.0
-    created: "2024-12-24T15:33:54.264870486Z"
+    created: "2025-04-20T15:39:25.951774979Z"
     description: A Helm chart for Kubernetes
     digest: d9c616deeae71352c7b8f32200fed0fdfa103823322d20ab9dd2d5bc7aee0583
     name: aws-global-accelerator-controller
@@ -93,7 +93,7 @@ entries:
     version: 0.6.3
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2024-12-24T15:33:54.264639133Z"
+    created: "2025-04-20T15:39:25.951515586Z"
     description: A Helm chart for Kubernetes
     digest: cb7ed4e629e7dea2be4446946877301ef271c865e1b3540fdc86015b5a44c13a
     name: aws-global-accelerator-controller
@@ -103,7 +103,7 @@ entries:
     version: 0.6.2
   - apiVersion: v2
     appVersion: 0.6.1
-    created: "2024-12-24T15:33:54.264394506Z"
+    created: "2025-04-20T15:39:25.95127598Z"
     description: A Helm chart for Kubernetes
     digest: 86ff8fd3f7142775ce813def3910f5e6fbe6ec78afe8a0cb5b1ccf714c1da68a
     name: aws-global-accelerator-controller
@@ -113,7 +113,7 @@ entries:
     version: 0.6.1
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2024-12-24T15:33:54.264150118Z"
+    created: "2025-04-20T15:39:25.951031675Z"
     description: A Helm chart for Kubernetes
     digest: 37de5f43531ff5681c0a0a88c801581b1201b346c1d50e2ced66183d8ed758ec
     name: aws-global-accelerator-controller
@@ -123,7 +123,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.5.2
-    created: "2024-12-24T15:33:54.263915149Z"
+    created: "2025-04-20T15:39:25.950777783Z"
     description: A Helm chart for Kubernetes
     digest: 0de89cff15dd6c80585295f4e6f1baaf25e275cd9f5c02170b18f34591955996
     name: aws-global-accelerator-controller
@@ -133,7 +133,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2024-12-24T15:33:54.263692793Z"
+    created: "2025-04-20T15:39:25.95051847Z"
     description: A Helm chart for Kubernetes
     digest: d066326740b44ccb061e6901fad524215d5db4c455384344463f3d103b5d50e2
     name: aws-global-accelerator-controller
@@ -143,7 +143,7 @@ entries:
     version: 0.5.2
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2024-12-24T15:33:54.26346687Z"
+    created: "2025-04-20T15:39:25.950285086Z"
     description: A Helm chart for Kubernetes
     digest: 4d01b6262ee553d72f5f30b5eae23895c01b77d5977ccaac3bce1627626c2865
     name: aws-global-accelerator-controller
@@ -153,7 +153,7 @@ entries:
     version: 0.5.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2024-12-24T15:33:54.263243221Z"
+    created: "2025-04-20T15:39:25.950053154Z"
     description: A Helm chart for Kubernetes
     digest: 56d4384fc0ec75e0295d7dd5142a9f00f8023c83ac4bc737dd32a450cc907456
     name: aws-global-accelerator-controller
@@ -163,7 +163,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2024-12-24T15:33:54.26301823Z"
+    created: "2025-04-20T15:39:25.94981466Z"
     description: A Helm chart for Kubernetes
     digest: 9408132c566a4260526f5eb6d5a575c77cf2cacc8693bbca0d234379f8bb7422
     name: aws-global-accelerator-controller
@@ -173,7 +173,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2024-12-24T15:33:54.26279373Z"
+    created: "2025-04-20T15:39:25.949562571Z"
     description: A Helm chart for Kubernetes
     digest: 4860f2e2c6565f8fd9eab058601193c3ab9fc793bae9b0197c0e6b932cc0b3a4
     name: aws-global-accelerator-controller
@@ -183,7 +183,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2024-12-24T15:33:54.262502515Z"
+    created: "2025-04-20T15:39:25.949303238Z"
     description: A Helm chart for Kubernetes
     digest: fdc4aaa162a3ff83de8a7da0ee368f6154ca948e083129f437dd0ad6b121bc1a
     name: aws-global-accelerator-controller
@@ -193,7 +193,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-12-24T15:33:54.262236247Z"
+    created: "2025-04-20T15:39:25.949052572Z"
     description: A Helm chart for Kubernetes
     digest: 321f92f95f6d03c7b0a21d268f2a747174b3a2e5b486b60b74c9c57c8d452b2c
     name: aws-global-accelerator-controller
@@ -203,7 +203,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.261998322Z"
+    created: "2025-04-20T15:39:25.948784964Z"
     description: A Helm chart for Kubernetes
     digest: c5a6967058e6b029121ea34d1e6853b90a14ad31c8e746fc2b98a675f6f4f1e5
     name: aws-global-accelerator-controller
@@ -214,7 +214,7 @@ entries:
   eks-pod-identity-webhook-installer:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-12-24T15:33:54.26882343Z"
+    created: "2025-04-20T15:39:25.955891273Z"
     description: A Helm chart to install eks-pod-identity-webhook-installer
     digest: 2f0f005d117b1e10a7d22cea447ddd65c98ba5832c0054b60cf69012830a33f9
     name: eks-pod-identity-webhook-installer
@@ -224,7 +224,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-12-24T15:33:54.268550199Z"
+    created: "2025-04-20T15:39:25.955597085Z"
     description: A Helm chart to install eks-pod-identity-webhook-installer
     digest: d298a34fc912185aa120208cf1c775cd66e49bf470ca2eb6407c3702bd9da2d1
     name: eks-pod-identity-webhook-installer
@@ -234,7 +234,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-12-24T15:33:54.26828908Z"
+    created: "2025-04-20T15:39:25.955328335Z"
     description: A Helm chart to install eks-pod-identity-webhook-installer
     digest: ee99c12330c91f3145ae862cfcb44cfc6ac5d54612e6da82ba5f22a7b41db86d
     name: eks-pod-identity-webhook-installer
@@ -244,7 +244,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.268027421Z"
+    created: "2025-04-20T15:39:25.955056629Z"
     description: A Helm chart to install eks-pod-identity-webhook-installer
     digest: e70386ad58a351d8eb28d20ca7bb937913d329b978e8bb15f96cc479ff2b78cd
     name: eks-pod-identity-webhook-installer
@@ -254,8 +254,18 @@ entries:
     version: 0.1.0
   fluentd-sidecar-injector:
   - apiVersion: v2
+    appVersion: 0.16.0
+    created: "2025-04-20T15:39:25.96127957Z"
+    description: A Helm chart for fluentd-sidecar-injector
+    digest: c1cfce83a0c0583ba7feacb9b45f63959b2abdb914ab184870117980b6085b50
+    name: fluentd-sidecar-injector
+    type: application
+    urls:
+    - fluentd-sidecar-injector-0.4.7.tgz
+    version: 0.4.7
+  - apiVersion: v2
     appVersion: 0.15.0
-    created: "2024-12-24T15:33:54.273936502Z"
+    created: "2025-04-20T15:39:25.960565964Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 18d6a751eaf9dd6d1e44b499eaac49f3b586a645f0d6b52028919a3d2a35248f
     name: fluentd-sidecar-injector
@@ -265,7 +275,7 @@ entries:
     version: 0.4.6
   - apiVersion: v2
     appVersion: 0.14.0
-    created: "2024-12-24T15:33:54.273645918Z"
+    created: "2025-04-20T15:39:25.959884636Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 0de7754e2935ee211af6d39417cc50241fb419528f7696f466c8b5330a87e311
     name: fluentd-sidecar-injector
@@ -275,7 +285,7 @@ entries:
     version: 0.4.5
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2024-12-24T15:33:54.273350365Z"
+    created: "2025-04-20T15:39:25.959582844Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 1c701c91e01a1cf339f38ae3abd6a4a8ce4d10c468f500f0533a42fd3b97ea9f
     name: fluentd-sidecar-injector
@@ -285,7 +295,7 @@ entries:
     version: 0.4.4
   - apiVersion: v2
     appVersion: 0.12.0
-    created: "2024-12-24T15:33:54.273024996Z"
+    created: "2025-04-20T15:39:25.959299677Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 3e1742ea39b08eadf25c891e2482ebb19c973d065876f2723f5444304ef4a76e
     name: fluentd-sidecar-injector
@@ -295,7 +305,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2024-12-24T15:33:54.272247348Z"
+    created: "2025-04-20T15:39:25.959014596Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: d94ff05473c7e33322a1f3c265abff7d06128366e22c0ea00c2f2a68111237bf
     name: fluentd-sidecar-injector
@@ -305,7 +315,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2024-12-24T15:33:54.271600467Z"
+    created: "2025-04-20T15:39:25.958706433Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: e9392a2317801d631cf826569997dd486c99ee7f7d73a611878364a9f089bbc5
     name: fluentd-sidecar-injector
@@ -315,7 +325,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2024-12-24T15:33:54.271322437Z"
+    created: "2025-04-20T15:39:25.95842556Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 00369cff2f9bc57b8510bbcb41b6a4ec22da76c6f83b04a29d7f65f4540916be
     name: fluentd-sidecar-injector
@@ -325,7 +335,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.5.1
-    created: "2024-12-24T15:33:54.271042843Z"
+    created: "2025-04-20T15:39:25.958143185Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 04f3c72a364d6201c05b0886e81ef6433cbf33277c43a27a5542ae1651cfda19
     name: fluentd-sidecar-injector
@@ -335,7 +345,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2024-12-24T15:33:54.270762459Z"
+    created: "2025-04-20T15:39:25.957868102Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 34801e54e20e3977854c1797ea2f6be08684b422bcb768356a19373d9b32aa0b
     name: fluentd-sidecar-injector
@@ -345,7 +355,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2024-12-24T15:33:54.270450645Z"
+    created: "2025-04-20T15:39:25.95757125Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 9a80160852991d6052dee2dc42342db25b9519d4c53a44f2922b5787151b75d6
     name: fluentd-sidecar-injector
@@ -355,7 +365,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2024-12-24T15:33:54.27017503Z"
+    created: "2025-04-20T15:39:25.957289055Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: cddeb780bb62cb14de353ff578f62fc382a709cf7a7f0ec00b7b87d851ae3367
     name: fluentd-sidecar-injector
@@ -365,7 +375,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2024-12-24T15:33:54.269894595Z"
+    created: "2025-04-20T15:39:25.956997753Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 317b90c5b6c225f3d28d8cc7ffbf283b9a0197ecff444bd1be0b53611878657f
     name: fluentd-sidecar-injector
@@ -375,7 +385,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.4.2
-    created: "2024-12-24T15:33:54.269617506Z"
+    created: "2025-04-20T15:39:25.956699708Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 331bbda8014240f740f8084a6a24672586adb7b77f28eb3b8316b736f700a1a2
     name: fluentd-sidecar-injector
@@ -385,7 +395,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2024-12-24T15:33:54.269339316Z"
+    created: "2025-04-20T15:39:25.956418795Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: b708ab2885577f77b5fc5c5eed810a9dd75eac583da6f0987a05eaf50a5d7b0e
     name: fluentd-sidecar-injector
@@ -395,7 +405,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2024-12-24T15:33:54.269072146Z"
+    created: "2025-04-20T15:39:25.95614745Z"
     description: A Helm chart for fluentd-sidecar-injector
     digest: 1d73e7c8596af91ac50df15f3072d60b1950c5c960c2bca2804b0ab1b9802763
     name: fluentd-sidecar-injector
@@ -406,7 +416,7 @@ entries:
   kms-secrets:
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2024-12-24T15:33:54.276488588Z"
+    created: "2025-04-20T15:39:25.964091254Z"
     description: A Helm chart for kms-secrets
     digest: ae51ed91b6f7e6bb2a3adfab65b52a9ea2bd42fb19a98d9a611780a9e3361122
     name: kms-secrets
@@ -416,7 +426,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2024-12-24T15:33:54.276253889Z"
+    created: "2025-04-20T15:39:25.963864632Z"
     description: A Helm chart for kms-secrets
     digest: 159683d7bac43c2ab59d419627a50c4a342dc5ed555179a5654015934faf56e9
     name: kms-secrets
@@ -426,7 +436,7 @@ entries:
     version: 0.2.0
   - apiVersion: v1
     appVersion: 0.3.0
-    created: "2024-12-24T15:33:54.276058703Z"
+    created: "2025-04-20T15:39:25.963623794Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: dfac63f1ca58666a38da01c11bf1598301fc93d374aa986cfdbda1a4cf134181
     home: https://github.com/h3poteto/kms-secrets
@@ -438,7 +448,7 @@ entries:
     version: 0.1.9
   - apiVersion: v1
     appVersion: 0.2.1
-    created: "2024-12-24T15:33:54.275857957Z"
+    created: "2025-04-20T15:39:25.963400147Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: cc810f73365f80d28dc8253a77921500f27628731a6919b212c4ab125b145535
     home: https://github.com/h3poteto/kms-secrets
@@ -450,7 +460,7 @@ entries:
     version: 0.1.8
   - apiVersion: v1
     appVersion: 0.2.0
-    created: "2024-12-24T15:33:54.275654737Z"
+    created: "2025-04-20T15:39:25.963038194Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 4218b2faa67ddc8cbfb948903d8fd136a6d6747616c10ae2eab701135342e932
     home: https://github.com/h3poteto/kms-secrets
@@ -462,7 +472,7 @@ entries:
     version: 0.1.7
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2024-12-24T15:33:54.275453691Z"
+    created: "2025-04-20T15:39:25.96283193Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: a8fd6d4627a062233a272f6d34947bce3205bde0db162c7434a7f0b55b836627
     home: https://github.com/h3poteto/kms-secrets
@@ -474,7 +484,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2024-12-24T15:33:54.275251152Z"
+    created: "2025-04-20T15:39:25.96260643Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 262562d1d18586006f8371acc58ab6cd7a1c95aba86728f3e921883c7d930acc
     home: https://github.com/h3poteto/kms-secrets
@@ -486,7 +496,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: 0.1.4
-    created: "2024-12-24T15:33:54.275044566Z"
+    created: "2025-04-20T15:39:25.962386821Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: fed2c7322802fe412a3256c95909b7f6bb1f9ac69cfde8c40c3e8a9936b14140
     home: https://github.com/h3poteto/kms-secrets
@@ -498,7 +508,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: 0.1.3
-    created: "2024-12-24T15:33:54.274836506Z"
+    created: "2025-04-20T15:39:25.962174677Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 1f39ebf6d0ea6989361a91df0ed6b5e711a8debe9c98bca2fca8567be63fd971
     home: https://github.com/h3poteto/kms-secrets
@@ -510,7 +520,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: 0.1.1
-    created: "2024-12-24T15:33:54.274590526Z"
+    created: "2025-04-20T15:39:25.961967821Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 5aa37c01d66da07666af9505cdf95531a93d90bf0693d23dbd2592b364782a7f
     home: https://github.com/h3poteto/kms-secrets
@@ -522,7 +532,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.274354183Z"
+    created: "2025-04-20T15:39:25.96175768Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 765ea0030d5d352d2a574c1d90053b6512b327bebcd97092fc7105ef0c163dfc
     home: https://github.com/h3poteto/kms-secrets
@@ -534,7 +544,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.274145162Z"
+    created: "2025-04-20T15:39:25.961516652Z"
     description: KMS Secrets Helm chart for Kubernetes
     digest: 34f19d2704f4fd65cf9f320f70debcf833010be5595da15a8ef47aa4a1798d10
     home: https://github.com/h3poteto/kms-secrets
@@ -547,7 +557,7 @@ entries:
   node-manager:
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2024-12-24T15:33:54.281395242Z"
+    created: "2025-04-20T15:39:25.96941901Z"
     description: A Helm chart for Kubernetes
     digest: 92a24c4d6df659bd20bd1eda6c95e11b7e0830e91914b1a8d2e4c1c5a6963dda
     name: node-manager
@@ -557,7 +567,7 @@ entries:
     version: 0.4.4
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2024-12-24T15:33:54.281104568Z"
+    created: "2025-04-20T15:39:25.969116948Z"
     description: A Helm chart for Kubernetes
     digest: 527cdc06fa9ff0db7c5ed9bfb9b600a63a9b2d939786ec0b075a064dba3bfdc1
     name: node-manager
@@ -567,7 +577,7 @@ entries:
     version: 0.4.3
   - apiVersion: v2
     appVersion: 0.6.0
-    created: "2024-12-24T15:33:54.280809646Z"
+    created: "2025-04-20T15:39:25.968807272Z"
     description: A Helm chart for Kubernetes
     digest: 99a50c36e170110dbeaa5e72b1c2785c752cde2c000654ba8a77d05294e2e018
     name: node-manager
@@ -577,7 +587,7 @@ entries:
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.5.0
-    created: "2024-12-24T15:33:54.280510506Z"
+    created: "2025-04-20T15:39:25.968483429Z"
     description: A Helm chart for Kubernetes
     digest: f389647fd91ebd2bb274082c8d1307ad3bea3195230a7821c1dfb60ec9c70352
     name: node-manager
@@ -587,7 +597,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2024-12-24T15:33:54.28021871Z"
+    created: "2025-04-20T15:39:25.968170507Z"
     description: A Helm chart for Kubernetes
     digest: 510a2b25702d8dc3560487ebfa10d0da50753f968d0e1486a70cbaf5ab1d9d33
     name: node-manager
@@ -597,7 +607,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2024-12-24T15:33:54.279922686Z"
+    created: "2025-04-20T15:39:25.96784497Z"
     description: A Helm chart for Kubernetes
     digest: 256dd48ac2b678e1b5b314fed10a5a49b66421785fa8240933692fa4846c4b7e
     name: node-manager
@@ -607,7 +617,7 @@ entries:
     version: 0.3.4
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2024-12-24T15:33:54.279606134Z"
+    created: "2025-04-20T15:39:25.967228544Z"
     description: A Helm chart for Kubernetes
     digest: be3250066606db89ee0d0f853986cc811b75c73c5c01849c2d8ea4403f9859bc
     name: node-manager
@@ -617,7 +627,7 @@ entries:
     version: 0.3.3
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2024-12-24T15:33:54.279303918Z"
+    created: "2025-04-20T15:39:25.96658225Z"
     description: A Helm chart for Kubernetes
     digest: ebb4a57122cfeb67c17356f0a92f5c1cf9e5adfac30dbeb411ba9958f4d22d4f
     name: node-manager
@@ -627,7 +637,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-12-24T15:33:54.278996904Z"
+    created: "2025-04-20T15:39:25.96593178Z"
     description: A Helm chart for Kubernetes
     digest: 954bd1d861bb131084469ed0f72c6009edc0b285ae26c6491a720b19b0fcf08e
     name: node-manager
@@ -637,7 +647,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2024-12-24T15:33:54.278654413Z"
+    created: "2025-04-20T15:39:25.965605833Z"
     description: A Helm chart for Kubernetes
     digest: fdfda5f971bc08111a8319713d99e85501e6830cfec8f38e358bd73ead26dd1b
     name: node-manager
@@ -647,7 +657,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2024-12-24T15:33:54.277914917Z"
+    created: "2025-04-20T15:39:25.965307808Z"
     description: A Helm chart for Kubernetes
     digest: ed77ba9e838513a43617e6f724ef746ca7f29097d33a00b63534589c03570117
     name: node-manager
@@ -657,7 +667,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-12-24T15:33:54.277379605Z"
+    created: "2025-04-20T15:39:25.965006397Z"
     description: A Helm chart for Kubernetes
     digest: c69f2b32acb8d4ea0b228e4cc64cede80e76c68ff517e006858c46726df94667
     name: node-manager
@@ -667,7 +677,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.277060949Z"
+    created: "2025-04-20T15:39:25.964670883Z"
     description: A Helm chart for Kubernetes
     digest: da57d38c5135525e38ef77c39215da93094672b86538cd7a72850b312b8d569b
     name: node-manager
@@ -677,7 +687,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-24T15:33:54.276766307Z"
+    created: "2025-04-20T15:39:25.964370794Z"
     description: A Helm chart for Kubernetes
     digest: 6d0b5ae436cb2fe112fec4abfeb7f96940697e68b42519628eb90ca6a7f3d6b8
     name: node-manager
@@ -685,4 +695,4 @@ entries:
     urls:
     - node-manager-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-24T15:33:54.261594646Z"
+generated: "2025-04-20T15:39:25.947990066Z"
