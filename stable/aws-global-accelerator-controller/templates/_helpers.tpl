@@ -8,7 +8,7 @@
 {{- end -}}
 
 {{- define "aws-global-accelerator-controller.serviceAccountName" -}}
-{{- if .Values.rbac.create }}
+{{- if .Values.rbac.serviceAccount.create }}
     {{- printf "%s-%s" (include "aws-global-accelerator-controller.name" .) "manager" }}
 {{- else -}}
     {{ default "default" .Values.rbac.serviceAccount.name }}
