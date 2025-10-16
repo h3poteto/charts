@@ -41,6 +41,9 @@ spec:
             - /aws-global-accelerator-controller
             - controller
             - --cluster-name={{ .Values.clusterName }}
+            {{- if .Values.globalAcceleratorId }}
+            - --existing-accelerator-arn={{ .Values.globalAcceleratorId | quote }}
+            {{- end }}
             {{- if .Values.verbose }}
             - --v=4
             {{- end }}
