@@ -21,6 +21,9 @@ spec:
       labels:
         h3poteto.dev: aws-global-accelerator-controller
         role: manager
+        {{- with .Values.podLabels }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
