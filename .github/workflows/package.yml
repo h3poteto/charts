@@ -18,8 +18,6 @@ jobs:
         run: |
           helm package aws-global-accelerator-controller
           helm package fluentd-sidecar-injector
-          helm package kms-secrets
-          helm package node-manager
       - name: Check new packages
         working-directory: stable
         id: check
