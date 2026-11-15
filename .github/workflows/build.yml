@@ -8,10 +8,9 @@ on:
   pull_request:
 
 env:
-  KIND_VERSION: v0.27.0
-  KUBECTL_VERSION: v1.32.4
-  HELM_VERSION: v3.17.3
-  HELMFILE_VERSION: 1.0.0
+  KIND_VERSION: v0.32.0
+  KUBECTL_VERSION: v1.36.1
+  HELM_VERSION: v4.3.0
 
 jobs:
   build:
