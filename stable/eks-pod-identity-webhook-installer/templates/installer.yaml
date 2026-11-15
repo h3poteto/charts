@@ -1,8 +1,0 @@
-apiVersion: installer.h3poteto.dev/v1alpha1
-kind: EKSPodIdentityWebhook
-metadata:
-  name: {{ .Release.Name }}
-spec:
-  tokenAudience: {{ .Values.eksPodIdentityWebhookInstaller.tokenAudience }}
-  namespace: {{ .Values.eksPodIdentityWebhookInstaller.namespace }}
-
