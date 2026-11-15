@@ -42,33 +42,9 @@ jobs:
           mv "linux-amd64/helm" "$BIN_DIR/helm"
           chmod +x "$BIN_DIR/helm"
           echo "$BIN_DIR" >> "$GITHUB_PATH"
-      - name: Install helmfile
-        env:
-          HELMFILE_VERSION: ${{ env.HELMFILE_VERSION }}
-          BIN_DIR: ${{ github.workspace }}/tools
-        run: |
-          mkdir -p $BIN_DIR
-          curl -L -o helmfile.tar.gz https://github.com/helmfile/helmfile/releases/download/v${HELMFILE_VERSION}/helmfile_${HELMFILE_VERSION}_linux_amd64.tar.gz
-          tar -xzf helmfile.tar.gz
-          mv helmfile "$BIN_DIR/helmfile"
-          chmod +x "$BIN_DIR/helmfile"
-          echo "$BIN_DIR" >> "$GITHUB_PATH"
-      - name: Run node-manager
-        run: |
-          helm template --debug node-manager -n kube-system ./stable/node-manager
-      - name: Install node-manager
-        working-directory: ./examples/node-manager
-        run: |
-          helmfile sync
       - name: Run fluentd-sidecar-injector
         run: |
           helm template --debug fluentd-sidecar-injector -n kube-system ./stable/fluentd-sidecar-injector
-      - name: Run kms-secrets
-        run: |
-          helm template --debug kms-secrets -n kube-system ./stable/kms-secrets
-      - name: Run eks-pod-identity-webhook-installer
-        run: |
-          helm template --debug eks-pod-identity-webhook-installer -n kube-system ./stable/eks-pod-identity-webhook-installer
       - name: Run aws-global-accelerator-controller
         run: |
           helm template --debug global-accelerator-controller -n kube-system ./stable/aws-global-accelerator-controller
